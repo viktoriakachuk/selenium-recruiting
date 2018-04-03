@@ -18,137 +18,86 @@ public class ApplicationPage {
 
 
     public void fillinPositionField(String position) throws InterruptedException {
-        WebElement element = driver.findElement(ApplicationElements.POSITION);
-        element.clear();
-        element.sendKeys(position);
+        ApplicationElements.POSITION.fillinText(position);
         sleep(2000);
     }
     public void fillinClosingDate(String date){
-        WebElement element = driver.findElement(ApplicationElements.CLOSING_DATE);
-        element.clear();
-        element.sendKeys(date);
+        ApplicationElements.CLOSING_DATE.fillinText(date);
     }
     public void clickPriorityRadio(){
-        WebElement element = driver.findElement(ApplicationElements.PRIORITY);
-        element.click();
+        ApplicationElements.PRIORITY.click();
     }
     public void fillinQuantityField(String quantity){
-        WebElement element = driver.findElement(ApplicationElements.QUANTITY);
-        element.clear();
-        element.sendKeys(quantity);
+        ApplicationElements.QUANTITY.fillinText(quantity);
     }
     public void fillinReasonField(String reason){
-        WebElement element = driver.findElement(ApplicationElements.REASON);
-        element.clear();
-        element.sendKeys(reason);
+        ApplicationElements.REASON.fillinText(reason);
     }
     public void clickContractTypeRadio(){
-        WebElement element = driver.findElement(ApplicationElements.CONTRACT_TYPE);
-        element.click();
+        ApplicationElements.CONTRACT_TYPE.click();
     }
     public void fillinSalaryField(String salary){
-        WebElement element = driver.findElement(ApplicationElements.SALARY);
-        element.clear();
-        element.sendKeys(salary);
+        ApplicationElements.SALARY.fillinText(salary);
     }
     public void selectCurrency(String currency){
-        WebElement element = driver.findElement(ApplicationElements.CURRENCY);
-        Select select = new Select(element);
-        select.selectByVisibleText(currency);
+        ApplicationElements.CURRENCY.selectByText(currency);
     }
     public void selectJobType(String jobType){
-        WebElement element = driver.findElement(ApplicationElements.JOB_TYPE);
-        Select select = new Select(element);
-        select.selectByVisibleText(jobType);
+        ApplicationElements.JOB_TYPE.selectByText(jobType);
     }
     public void fillinEmployeesField(String employees){
-        WebElement element = driver.findElement(ApplicationElements.EMPLOYEES);
-        element.clear();
-        element.sendKeys(employees);
+        ApplicationElements.EMPLOYEES.fillinText(employees);
     }
     public void fillinBusinessTripField(String btrip){
-        WebElement element = driver.findElement(ApplicationElements.BUSINESS_TRIP);
-        element.clear();
-        element.sendKeys(btrip);
+        ApplicationElements.BUSINESS_TRIP.fillinText(btrip); ;
     }
     public void fillinTimetableField(String timetable){
-        WebElement element = driver.findElement(ApplicationElements.TIMETABLE);
-        element.clear();
-        element.sendKeys(timetable);
+        ApplicationElements.TIMETABLE.fillinText(timetable);
     }
 
     public void fillinProbationField(String probation){
-        WebElement element = driver.findElement(ApplicationElements.PROBATION_PERIOD);
-        element.clear();
-        element.sendKeys(probation);
+        ApplicationElements.PROBATION_PERIOD.fillinText(probation);
     }
     public void fillinResponsibilitiesField(String responsibilities){
-        WebElement element = driver.findElement(ApplicationElements.RESPONSIBILITIES);
-        element.clear();
-        element.sendKeys(responsibilities);
+        ApplicationElements.RESPONSIBILITIES.fillinText(responsibilities);
     }
     public void clickCandidateType(){
-        WebElement element = driver.findElement(ApplicationElements.CANDIDATE_TYPE);
-        element.click();
+        ApplicationElements.CANDIDATE_TYPE.click();
     }
     public void selectEducation(String education){
-        WebElement element = driver.findElement(ApplicationElements.EDUCATION);
-        Select select = new Select(element);
-        select.selectByVisibleText(education);
+        ApplicationElements.EDUCATION.selectByText(education);
     }
     public void fillinSpecializationField(String specialization){
-        WebElement element = driver.findElement(ApplicationElements.SPECIALIZATION);
-        element.clear();
-        element.sendKeys(specialization);
+        ApplicationElements.SPECIALIZATION.fillinText(specialization);
     }
     public void selectExperience(String experience){
-        WebElement element = driver.findElement(ApplicationElements.EXPERIENCE);
-        Select select = new Select(element);
-        select.selectByVisibleText(experience);
+        ApplicationElements.EXPERIENCE.selectByText(experience);
     }
     public void fillinPriorityExperienceField(String priorityExperience){
-        WebElement element = driver.findElement(ApplicationElements.PRIORITY_EXPERIENCE);
-        element.clear();
-        element.sendKeys(priorityExperience);
+        ApplicationElements.PRIORITY_EXPERIENCE.fillinText(priorityExperience);
     }
     public void fillinUndesirableExperienceField(String undesirableExperience){
-        WebElement element = driver.findElement(ApplicationElements.UNDESIRABLE_EXPERIENCE);
-        element.clear();
-        element.sendKeys(undesirableExperience);
+        ApplicationElements.UNDESIRABLE_EXPERIENCE.fillinText(undesirableExperience);
     }
 
     public void fillinCommentField(String comment){
-        WebElement element = driver.findElement(ApplicationElements.COMMENT);
-        element.clear();
-        element.sendKeys(comment);
+        ApplicationElements.COMMENT.fillinText(comment);
     }
 
     public void fillinCompetence() throws InterruptedException {
-        WebElement el = driver.findElement(ApplicationElements.COMPETENCE_ADD_BUTTON);
-        el.click();
-        WebElement element = driver.findElement(ApplicationElements.COMPETENCE_LAYER);
-        element.click();
-        WebElement element0 = driver.findElement(ApplicationElements.COMPETENCE_GROUP);
-        element0.click();
-        WebElement element1 = driver.findElement(ApplicationElements.COMPETENCE);
-       /* element1.click();
-        element1.click();*/
-       /* WebElement element2 = driver.findElement(ApplicationElements.COMPETENCE_OK_BUTTON);
-        element2.click();*/
+        ApplicationElements.COMPETENCE_ADD_BUTTON.click();
+        ApplicationElements.COMPETENCE_LAYER.click();
+        ApplicationElements.COMPETENCE_GROUP.click();
+        WebElement element1 = driver.findElement(ApplicationElements.COMPETENCE.getBy());
         Actions action = new Actions(driver); action.doubleClick(element1); action.perform();
         sleep(2000);
-        WebElement okButton = driver.findElement(ApplicationElements.COMPETENCE_OK_BUTTON);
+        WebElement okButton = driver.findElement(ApplicationElements.COMPETENCE_OK_BUTTON.getBy());
         sleep(2000);
         okButton.click();
     }
 
     public void save(){
-        WebElement element = driver.findElement(ApplicationElements.SAVE_BUTTON);
-        element.click();
+        ApplicationElements.SAVE_BUTTON.click();
     }
-
-
-
-
 
 }

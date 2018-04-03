@@ -1,4 +1,4 @@
-package test;
+package test.login;
 
 import driver.WebDriverSingleton;
 import org.junit.After;

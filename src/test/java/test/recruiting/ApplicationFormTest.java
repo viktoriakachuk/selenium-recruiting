@@ -1,4 +1,4 @@
-package test;
+package test.recruiting;
 
 import driver.WebDriverSingleton;
 import org.junit.After;
@@ -11,24 +11,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import test.Login;
 import web.page.ApplicationPage;
 import web.page.LoginPage;
 
 import static java.lang.Thread.sleep;
 
-public class ApplicationFormTest {
+public class ApplicationFormTest extends Login {
     private WebDriver driver = WebDriverSingleton.getInstance();
 
     ApplicationPage ap = new ApplicationPage();
 
     @Before
-    public void login(){
-        LoginPage lp = new LoginPage();
-        lp.enterLoginPage();
-        lp.fillinLoginField("kabanov@tc.by");
-        lp.fillinPasswordField("welcome");
-        lp.clickEnterButton();
-    }
+    public void doLoginAsRecruiter(){
+        super.login("recruiter");
+    };
 
     @Test
     public void fillinApplicationPositive() throws InterruptedException {

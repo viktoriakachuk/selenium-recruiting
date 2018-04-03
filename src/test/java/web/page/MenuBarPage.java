@@ -14,14 +14,14 @@ public class MenuBarPage {
 
     public void clickHomeButton(){
         WebDriverWait element = new WebDriverWait(driver, 120);
-        element.until(ExpectedConditions.visibilityOfElementLocated(MenuBarElements.HOME_BUTTON)).click();
+        element.until(ExpectedConditions.visibilityOfElementLocated(MenuBarElements.HOME_BUTTON.getBy())).click();
     }
     public void clickRecruitingButton(){
         WebDriverWait element = new WebDriverWait(driver, 120);
-        element.until(ExpectedConditions.visibilityOfElementLocated(MenuBarElements.RECRUITING_BUTTON)).click();
+        element.until(ExpectedConditions.visibilityOfElementLocated(MenuBarElements.RECRUITING_BUTTON.getBy())).click();
     }
     public void clickDirectoriesButton(){
         WebDriverWait element = new WebDriverWait(driver, 120);
-        element.until(ExpectedConditions.visibilityOfElementLocated(MenuBarElements.DIRECTORIES_BUTTON)).click();
+        element.until(ExpectedConditions.visibilityOfElementLocated(MenuBarElements.DIRECTORIES_BUTTON.getBy())).click();
     }
 }

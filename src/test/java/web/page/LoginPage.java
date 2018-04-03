@@ -13,17 +13,12 @@ public class LoginPage {
     }
 
     public void fillinLoginField(String login){
-        WebElement element = driver.findElement(LoginElements.LOGIN_FIELD);
-        element.clear();
-        element.sendKeys(login);
+        LoginElements.LOGIN_FIELD.fillinText(login);
     }
     public void fillinPasswordField(String password){
-        WebElement element = driver.findElement(LoginElements.PASSWORD_FIELD);
-        element.clear();
-        element.sendKeys(password);
+        LoginElements.PASSWORD_FIELD.fillinText(password);
     }
     public void clickEnterButton(){
-        WebElement element = driver.findElement(LoginElements.ENTER_BUTTON);
-        element.click();
+        LoginElements.ENTER_BUTTON.click();
     }
 }

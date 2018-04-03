@@ -1,4 +1,4 @@
-package test;
+package test.mainpage;
 
 import driver.WebDriverSingleton;
 import org.junit.After;
@@ -8,24 +8,21 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import test.Login;
 import web.page.LoginPage;
 import web.page.MenuBarPage;
 
 import java.awt.*;
 
-public class MenuBarTest {
+public class MenuBarTest extends Login {
     private WebDriver driver = WebDriverSingleton.getInstance();
 
     MenuBarPage mbp = new MenuBarPage();
 
     @Before
-    public void login(){
-        LoginPage lp = new LoginPage();
-        lp.enterLoginPage();
-        lp.fillinLoginField("kabanov@tc.by");
-        lp.fillinPasswordField("welcome");
-        lp.clickEnterButton();
-    }
+    public void doLoginAsRecruiter(){
+        super.login("recruiter");
+    };
 
 
     @Test
