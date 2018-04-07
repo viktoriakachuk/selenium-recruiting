@@ -15,12 +15,18 @@ import test.Login;
 import web.page.ApplicationPage;
 import web.page.LoginPage;
 
+import java.io.IOException;
+
+import static helper.Helper.closeBrowser;
 import static java.lang.Thread.sleep;
 
 public class ApplicationFormTest extends Login {
     private WebDriver driver = WebDriverSingleton.getInstance();
 
     ApplicationPage ap = new ApplicationPage();
+    final String LAYER_TEST_VALUE = "layer_2"; // уровень профессиональные компетенции
+    final String CATHEGORY_TEST_VALUE = "category_2476"; //категория компьютерные программы для ведению бухучета
+    final String COMPETENCE_TEST_VALUE = "competence_2477"; //компетенция 1С
 
     @Before
     public void doLoginAsRecruiter(){
@@ -52,7 +58,7 @@ public class ApplicationFormTest extends Login {
         ap.selectExperience("От 3 лет");
         ap.fillinPriorityExperienceField("госучреждения");
         ap.fillinUndesirableExperienceField("-");
-        ap.fillinCompetence();
+        ap.fillinCompetence(LAYER_TEST_VALUE,CATHEGORY_TEST_VALUE,COMPETENCE_TEST_VALUE);
         sleep(2000);
         ap.fillinCommentField("полный соцпакет");
         ap.save();
@@ -92,9 +98,7 @@ public class ApplicationFormTest extends Login {
     }
 
     @After
-    public void shutDown() {
-
-        driver.close();
-        WebDriverSingleton.destroyInstance();
+    public void shutDown() throws IOException {
+        closeBrowser();
     }
 }

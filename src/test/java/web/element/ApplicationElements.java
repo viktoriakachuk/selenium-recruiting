@@ -26,9 +26,7 @@ public class ApplicationElements {
     public static Element PRIORITY_EXPERIENCE = new Element("companies priority experience",By.xpath("//textarea[@id='priority.working.experience']"));
     public static Element UNDESIRABLE_EXPERIENCE = new Element("companies undesirable experience",By.xpath("//textarea[@id='undesirableWorkingExperience']"));
     public static Element COMPETENCE_ADD_BUTTON = new Element("competence add button",By.xpath("//a[@id='editrequiredCompetence']"));
-    public static Element COMPETENCE_LAYER = new Element("competence layer",By.xpath("//*[@id=\"layer_2\"]"));
-    public static Element COMPETENCE_GROUP = new Element("competence group",By.xpath("//*[@id=\"category_2476\"]"));
-    public static Element COMPETENCE = new Element("competence",By.xpath("//*[@id=\"competence_2477\"]"));
+    public static Element COMPETENCE_TREE = new Element ("competencies tree", By.xpath("//div[@id='competenciesTree']"));
     public static Element COMPETENCE_OK_BUTTON = new Element("competence ok button",By.xpath("//button[text()='OK']"));
     public static Element COMMENT = new Element("comment",By.xpath("//textarea[@id='comment']"));
     public static Element SAVE_BUTTON = new Element("save button",By.xpath("//button[@id='save']"));

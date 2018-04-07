@@ -84,16 +84,16 @@ public class ApplicationPage {
         ApplicationElements.COMMENT.fillinText(comment);
     }
 
-    public void fillinCompetence() throws InterruptedException {
+    public void fillinCompetence(String layer, String category, String competence) throws InterruptedException {
         ApplicationElements.COMPETENCE_ADD_BUTTON.click();
-        ApplicationElements.COMPETENCE_LAYER.click();
-        ApplicationElements.COMPETENCE_GROUP.click();
-        WebElement element1 = driver.findElement(ApplicationElements.COMPETENCE.getBy());
-        Actions action = new Actions(driver); action.doubleClick(element1); action.perform();
+        ApplicationElements.COMPETENCE_TREE.liOptionValue(layer,1);
         sleep(2000);
-        WebElement okButton = driver.findElement(ApplicationElements.COMPETENCE_OK_BUTTON.getBy());
+        ApplicationElements.COMPETENCE_TREE.liOptionValue(category,1);
         sleep(2000);
-        okButton.click();
+        ApplicationElements.COMPETENCE_TREE.liOptionValue(competence,2);
+        sleep(2000);
+        ApplicationElements.COMPETENCE_OK_BUTTON.click();
+
     }
 
     public void save(){

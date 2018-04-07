@@ -5,7 +5,10 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+
+import java.awt.*;
 
 public class Element {
     String name;
@@ -70,5 +73,33 @@ public class Element {
         assertPresence();
         Select select = new Select(getWebElement());
         select.selectByVisibleText(option);
+    }
+    public void checkboxOptionClassAndValue(String value){
+        assertPresence();
+        String checkboxClass;
+        checkboxClass = getWebElement().getAttribute("class");
+        WebElement element = WebDriverSingleton.getInstance().findElement(By.xpath("//input[@class='" + checkboxClass + "' and @value='" + value + "']"));
+        element.click();
+    }
+    public void checkboxOptionValue(String value){
+        assertPresence();
+        WebElement element = WebDriverSingleton.getInstance().findElement(By.xpath("//input[@value='" + value + "']"));
+        element.click();
+    }
+    public void liOptionValue(String value, int click){
+        assertPresence();
+        WebElement element = WebDriverSingleton.getInstance().findElement(By.xpath("//li[@id='" + value + "']"));
+        if (click==1){element.click();}
+        else if(click==2){
+            Actions action = new Actions(WebDriverSingleton.getInstance());
+            action.doubleClick(element);
+            action.perform();
+        }
+
+    }
+    public void levelValue(String value){
+        assertPresence();
+        WebElement element = WebDriverSingleton.getInstance().findElement(By.xpath("//div[@data-value='" + value + "']"));
+        element.click();
     }
 }

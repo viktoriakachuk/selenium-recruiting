@@ -13,6 +13,9 @@ import web.page.LoginPage;
 import web.page.MenuBarPage;
 
 import java.awt.*;
+import java.io.IOException;
+
+import static helper.Helper.closeBrowser;
 
 public class MenuBarTest extends Login {
     private WebDriver driver = WebDriverSingleton.getInstance();
@@ -42,9 +45,7 @@ public class MenuBarTest extends Login {
     }
 
     @After
-    public void shutDown() {
-
-        driver.close();
-        WebDriverSingleton.destroyInstance();
+    public void shutDown() throws IOException {
+        closeBrowser();
     }
 }
