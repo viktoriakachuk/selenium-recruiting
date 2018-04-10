@@ -26,10 +26,12 @@ public class CandidateFormElements {
     public static Element COMPETENCE_OK_BUTTON = new Element("competence ok button",By.xpath("//button[text()='OK']"));
     public static Element SAVE = new Element("save button", By.xpath("//a[@id='saveButton']"));
     public static Element CANCEL = new Element("cancel button", By.xpath("//a[@id='cancelButton']"));
-    public static Element LOAD_CV = new Element("load cv button", By.xpath("//a[@id='loadCVLink']"));
+    public static Element LOAD_CV_BUTTON = new Element ("load cv button", By.xpath("//span[@id='loadCVLink']"));
+    public static Element LOAD_CV_CONFIRM = new Element("load cv confirm button", By.xpath("//button[text()='OK']"));
     public static Element BACK_TO_LIST = new Element("back to the candidates list", By.xpath("//a[contains(@href,'recruiting/candidates/-/candidates')]"));
     public static Element ADD_ATTACHMENT = new Element("add attachment", By.xpath("//i[@class='fa fa-plus add-attachment']"));
-    public static Element LOAD_PROFILE_PHOTO = new Element ("load profile photo", By.xpath("//span[@id='changeImgLink']"));
     public static Element DELETE_BUTTON = new Element("delete candidate button",By.xpath("//a[@id='removeButton']"));
     public static Element DELETE_CONFIRM_BUTTON = new Element("delete candidate confirm button",By.xpath("//button[text()='Удалить']"));
+    public static Element PROFILE_PIC = new Element("load profile picture button", By.id("changeImgLink"));
+
 }

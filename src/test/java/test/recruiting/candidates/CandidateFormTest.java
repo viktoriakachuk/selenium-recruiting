@@ -11,8 +11,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.sikuli.script.FindFailed;
 import test.Login;
 import web.page.CandidateFormPage;
+
 
 import java.io.IOException;
 
@@ -35,13 +37,18 @@ public class CandidateFormTest extends Login {
     final String CATHEGORY_TEST_VALUE = "category_2476"; //категория компьютерные программы для ведению бухучета
     final String COMPETENCE_TEST_VALUE = "competence_2477"; //компетенция 1С
     final String COMPETENCE_LEVEL_TEST_VALUE = "50"; //уровень владения компетенцией базовый
-
+    final String NO_PROFILE_PIC = "http://testing.cld.iba.by/TC-RecruitingAndOnboarding-portlet/common/css/images/no-avatar.jpg";
+    final String PROFILE_PIC_TEST_VALUE = "resources/pictures/pic.jpg";
+    final String ATTACHMENT_TEST_VALUE = "resources/randomfiles/hello.txt";
+    final String FILE_PATH = "resources/sikuli/FilePath.PNG"; //win7
+    final String OPEN_BUTTON = "resources/sikuli/OpenButton.PNG"; //win7
+    final String CV_TEST_VALUE = "resources/cv/ibacv.docx";
     @Before
     public void doLoginAsRecruiter(){
         super.login("recruiter");
     }
     @Test
-    public void fillinCandidateFormPositive() throws InterruptedException {
+    public void fillinCandidateFormPositive() throws InterruptedException, FindFailed {
         cfp.enterCandidateFormPage();
         sleep(2000);
         cfp.fillinSurname(generateRandomString(5,ALPHA));
@@ -58,14 +65,21 @@ public class CandidateFormTest extends Login {
         cfp.fillinBDDateYear(YEAR_TEST_VALUE);
         cfp.selectEducation("Высшее");
         cfp.fillinPosition(generateRandomString(5,ALPHA));
-        //load profile photo
-        //add attachment
+        cfp.loadProfilePic(PROFILE_PIC_TEST_VALUE);
+        Assert.assertNotEquals(driver.findElement(By.id("currentImage")).getAttribute("src"), NO_PROFILE_PIC);
+
+        //
+        cfp.loadAttachment(ATTACHMENT_TEST_VALUE, FILE_PATH, OPEN_BUTTON);
+        Assert.assertEquals(driver.findElement(By.xpath("//span[@class='link']")).getText(), ATTACHMENT_TEST_VALUE.substring(22));
+        // causes no such file or directory error message
+
         cfp.fillinCompetence(LAYER_TEST_VALUE,CATHEGORY_TEST_VALUE,COMPETENCE_TEST_VALUE,COMPETENCE_LEVEL_TEST_VALUE);
         cfp.clickSave();
         Assert.assertEquals("Резюме было успешно сохранено", driver.findElement(By.xpath("//span[@id='successMessage']")).getText());
         //assert new entry
         //db connection required
     }
+
 
     @Test
     public void fillinCandidateFormNegativeEmptySurname(){
@@ -129,6 +143,11 @@ public class CandidateFormTest extends Login {
     }
 
     @Test
+    public void fillinCandidateFormNegativeMaxLength(){
+        // ASSERT Пожалуйста, введите не более 50 символов
+    }
+
+    @Test
     public void clickCancel(){
         cfp.enterCandidateFormPage();
         cfp.clickCancel();
@@ -142,7 +161,11 @@ public class CandidateFormTest extends Login {
         Assert.assertEquals("Кандидаты - Конструктор Талантов", driver.getTitle());
     }
     @Test
-    public void loadCV(){
+    public void loadCVPositive(){
+        cfp.enterCandidateFormPage();
+        cfp.loadCV(CV_TEST_VALUE);
+        //is not working with iba docx cv correctly
+        //change needed
         //ASSERT
     }
 

@@ -1,10 +1,20 @@
 package web.page;
 
 import driver.WebDriverSingleton;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.sikuli.script.FindFailed;
 import web.element.CandidateFormElements;
+import org.sikuli.script.Pattern;
+import org.sikuli.script.Screen;
+
+import java.awt.*;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import static java.lang.Thread.sleep;
 
@@ -82,6 +92,53 @@ public class CandidateFormPage {
     public void delete(){
         CandidateFormElements.DELETE_BUTTON.click();
         CandidateFormElements.DELETE_CONFIRM_BUTTON.click();
+    }
+
+    public void loadProfilePic(String picpath) {
+        CandidateFormElements.PROFILE_PIC.click();
+        sendFile(getAbsolutePath(picpath));
+
+    }
+    public void loadAttachment(String attachment, String filepath, String openbutton) throws FindFailed {
+        Pattern filePath = new Pattern(filepath);
+        Pattern openButton = new Pattern(openbutton);
+        CandidateFormElements.ADD_ATTACHMENT.click();
+        Screen screen = new Screen();
+        screen.wait(filePath, 20);
+        screen.type(filePath, getAbsolutePath(attachment));
+        screen.click(openButton);
+
+    }
+
+    public void loadCV(String cvpath){
+        CandidateFormElements.LOAD_CV_BUTTON.click();
+        CandidateFormElements.LOAD_CV_CONFIRM.click();
+        sendFile(getAbsolutePath(cvpath));
+    }
+    private String getAbsolutePath(String file) {
+        Path path = Paths.get(file);
+        return path.toAbsolutePath().toString();
+    }
+    private void sendFile(String path) {
+        try {
+            setClipboardData(path);
+            Robot robot = new Robot();
+            robot.delay(1000);
+            robot.keyPress(KeyEvent.VK_CONTROL);
+            robot.keyPress(KeyEvent.VK_V);
+            robot.keyRelease(KeyEvent.VK_V);
+            robot.keyRelease(KeyEvent.VK_CONTROL);
+            robot.delay(1000);
+            robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            robot.delay(1000);
+        } catch (AWTException e) {
+            e.printStackTrace();
+        }
+    }
+    private void setClipboardData(String string) {
+        StringSelection stringSelection = new StringSelection(string);
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
     }
 
 

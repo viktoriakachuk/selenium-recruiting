@@ -9,6 +9,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 import java.awt.*;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+import static java.lang.Thread.sleep;
 
 public class Element {
     String name;
@@ -95,7 +99,6 @@ public class Element {
             action.doubleClick(element);
             action.perform();
         }
-
     }
     public void levelValue(String value){
         assertPresence();
