@@ -1,6 +1,8 @@
 package test.mainpage;
 
 import driver.WebDriverSingleton;
+import io.qameta.allure.*;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -29,16 +31,31 @@ public class MenuBarTest extends Login {
 
 
     @Test
+    @DisplayName("Переход на главную страницу")
+    @Description("Переход на главную страницу")
+    @Feature("Меню")
+    @Story("Сценарий 1 – Навигация по меню")
+    @Severity(SeverityLevel.NORMAL)
     public void loadHomePageFromMenuBar(){
         mbp.clickHomeButton();
         Assert.assertEquals("Главная - Конструктор Талантов",driver.getTitle());
     }
     @Test
+    @DisplayName("Переход на страницу подбор и адаптация")
+    @Description("Переход на страницу подбор и адаптация")
+    @Feature("Меню")
+    @Story("Сценарий 1 – Навигация по меню")
+    @Severity(SeverityLevel.NORMAL)
     public void loadRecruitingPageFromMenuBar(){
         mbp.clickRecruitingButton();
         Assert.assertEquals("Подбор и адаптация - Конструктор Талантов",driver.getTitle());
     }
     @Test
+    @DisplayName("Переход на страницу справочники")
+    @Description("Переход на страницу справочники")
+    @Feature("Меню")
+    @Story("Сценарий 1 – Навигация по меню")
+    @Severity(SeverityLevel.NORMAL)
     public void loadDirectoriesPageFromMenuBar(){
         mbp.clickDirectoriesButton();
         Assert.assertEquals("Справочники - Конструктор Талантов",driver.getTitle());

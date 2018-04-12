@@ -1,0 +1,135 @@
+{
+  "uid" : "e3f81d582d4f45d0",
+  "name" : "Переход на страницу справочники",
+  "fullName" : "test.mainpage.MenuBarTest.loadDirectoriesPageFromMenuBar",
+  "historyId" : "a5b4f4e8697fbac1fdff455e6bf05f6a",
+  "time" : {
+    "start" : 1523555133015,
+    "stop" : 1523555141738,
+    "duration" : 8723
+  },
+  "status" : "passed",
+  "description" : "Переход на страницу справочники",
+  "descriptionHtml" : "<p>Переход на страницу справочники</p>",
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Вход на страницу авторизации",
+      "time" : {
+        "start" : 1523555133016,
+        "stop" : 1523555134543,
+        "duration" : 1527
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Ввод логина kabanov@tc.by",
+      "time" : {
+        "start" : 1523555134543,
+        "stop" : 1523555134628,
+        "duration" : 85
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "login",
+        "value" : "kabanov@tc.by"
+      } ]
+    }, {
+      "name" : "Ввод пароля welcome",
+      "time" : {
+        "start" : 1523555134628,
+        "stop" : 1523555134690,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "welcome"
+      } ]
+    }, {
+      "name" : "Нажатие кнопки войти ",
+      "time" : {
+        "start" : 1523555134691,
+        "stop" : 1523555138758,
+        "duration" : 4067
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Выбор меню Справочники",
+      "time" : {
+        "start" : 1523555138759,
+        "stop" : 1523555140377,
+        "duration" : 1618
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    } ],
+    "attachments" : [ ],
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "stepsCount" : 5
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.mainpage"
+  }, {
+    "name" : "testClass",
+    "value" : "test.mainpage.MenuBarTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loadDirectoriesPageFromMenuBar"
+  }, {
+    "name" : "suite",
+    "value" : "test.mainpage.MenuBarTest"
+  }, {
+    "name" : "host",
+    "value" : "WIN-6GBM20V5SU1"
+  }, {
+    "name" : "thread",
+    "value" : "20156@WIN-6GBM20V5SU1.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Меню"
+  }, {
+    "name" : "story",
+    "value" : "Сценарий 1 – Навигация по меню"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}

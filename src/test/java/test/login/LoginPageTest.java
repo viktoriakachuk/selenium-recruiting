@@ -2,6 +2,8 @@ package test.login;
 
 import driver.WebDriverSingleton;
 import helper.GeneratorMode;
+import io.qameta.allure.*;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
@@ -29,6 +31,11 @@ public class LoginPageTest {
     final String PASSWORD_TEST_VALUE = "welcome";
 
     @Test
+    @DisplayName("авторизация успех")
+    @Description("Авторизация успех")
+    @Feature("Авторизация")
+    @Story("Сценарий 1 – Авторизация главный рекрутер Кабанов")
+    @Severity(SeverityLevel.CRITICAL)
     public void loginAsRecruiterPositive(){
         lp.enterLoginPage();
         lp.fillinLoginField(LOGIN_TEST_VALUE);
@@ -39,6 +46,11 @@ public class LoginPageTest {
     }
 
     @Test
+    @DisplayName("неверный пароль")
+    @Description("Авторизация неверный пароль")
+    @Feature("Авторизация")
+    @Story("Сценарий 1 – Авторизация главный рекрутер Кабанов")
+    @Severity(SeverityLevel.NORMAL)
     public void loginAsRecruiterNegativeIncorrectData(){
         lp.enterLoginPage();
         lp.fillinLoginField(LOGIN_TEST_VALUE);
@@ -48,6 +60,11 @@ public class LoginPageTest {
     }
 
     @Test
+    @DisplayName("пустой логин")
+    @Description("Авторизация пустой логин")
+    @Feature("Авторизация")
+    @Story("Сценарий 1 – Авторизация главный рекрутер Кабанов")
+    @Severity(SeverityLevel.MINOR)
     public void loginAsRecruiterNegativeEmptyLoin(){
         lp.enterLoginPage();
         lp.fillinPasswordField(PASSWORD_TEST_VALUE);
@@ -56,6 +73,11 @@ public class LoginPageTest {
     }
 
     @Test
+    @DisplayName("пустой пароль")
+    @Description("Авторизация пустой пароль")
+    @Feature("Авторизация")
+    @Story("Сценарий 1 – Авторизация главный рекрутер Кабанов")
+    @Severity(SeverityLevel.MINOR)
     public void loginAsRecruiterNegativeEmptyPassword(){
         lp.enterLoginPage();
         lp.fillinLoginField(LOGIN_TEST_VALUE);

@@ -1,6 +1,8 @@
 package test.recruiting;
 
 import driver.WebDriverSingleton;
+import io.qameta.allure.*;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -34,6 +36,11 @@ public class ApplicationFormTest extends Login {
     };
 
     @Test
+    @DisplayName("создание заявки успех")
+    @Description("Создание заявки")
+    @Feature("Подбор и адаптация: заявки")
+    @Story("Сценарий 1 – создание заявки")
+    @Severity(SeverityLevel.NORMAL)
     public void fillinApplicationPositive() throws InterruptedException {
         ap.enterApplicationPage();
         sleep(2000);
@@ -62,10 +69,16 @@ public class ApplicationFormTest extends Login {
         sleep(2000);
         ap.fillinCommentField("полный соцпакет");
         ap.save();
+        sleep(3000);
         Assert.assertEquals("Заявка успешно сохранена", driver.findElement(By.xpath("//span[@id='successMessage']")).getText());
     }
 
     @Test
+    @DisplayName("пустая должность")
+    @Description("пустая должность")
+    @Feature("Подбор и адаптация: заявки")
+    @Story("Сценарий 1 – создание заявки")
+    @Severity(SeverityLevel.MINOR)
     public void fillinApplicationNegativeEmptyPosition(){
         ap.enterApplicationPage();
         Assert.assertEquals("Обязательное поле",driver.findElement(By.xpath("//div[@class='required']")).getText());
@@ -75,7 +88,12 @@ public class ApplicationFormTest extends Login {
         Assert.assertEquals("Ошибка!\nПроверьте обязательные поля",message);
     }
 
-    @Test
+  /*  @Test
+    @DisplayName("пустой тип кандидата")
+    @Description("пустой тип кандидата")
+    @Feature("Подбор и адаптация: заявки")
+    @Story("Сценарий 1 – создание заявки")
+    @Severity(SeverityLevel.MINOR)
     public void fillinApplicationNegativeEmptyCandidateType() throws InterruptedException {
         ap.enterApplicationPage();
         ap.fillinPositionField("Бухгалтер");
@@ -85,13 +103,20 @@ public class ApplicationFormTest extends Login {
         WebDriverWait element = new WebDriverWait(driver, 120);
         String message = element.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='message']"))).getText();
         Assert.assertEquals("Ошибка!\nПроверьте обязательные поля",message);
-    }
+    }*/
     @Test
+    @DisplayName("пустые компетенции")
+    @Description("пустые компетенции")
+    @Feature("Подбор и адаптация: заявки")
+    @Story("Сценарий 1 – создание заявки")
+    @Severity(SeverityLevel.MINOR)
     public void fillinApplicationNegativeEmptyCompetence() throws InterruptedException {
         ap.enterApplicationPage();
         ap.fillinPositionField("Бухгалтер");
         ap.clickCandidateType();
+        sleep(2000);
         ap.save();
+        sleep(3000);
         WebDriverWait element = new WebDriverWait(driver, 120);
         String message = element.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='message']"))).getText();
         Assert.assertEquals("Ошибка!\nВыберите хотя бы одну обязательную компетенцию",message);

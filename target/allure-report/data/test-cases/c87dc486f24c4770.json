@@ -1,0 +1,121 @@
+{
+  "uid" : "c87dc486f24c4770",
+  "name" : "неверный пароль",
+  "fullName" : "test.login.LoginPageTest.loginAsRecruiterNegativeIncorrectData",
+  "historyId" : "b65be039ff945272e879b272c59a74a8",
+  "time" : {
+    "start" : 1523555066074,
+    "stop" : 1523555070412,
+    "duration" : 4338
+  },
+  "status" : "passed",
+  "description" : "Авторизация неверный пароль",
+  "descriptionHtml" : "<p>Авторизация неверный пароль</p>",
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Вход на страницу авторизации",
+      "time" : {
+        "start" : 1523555066120,
+        "stop" : 1523555067567,
+        "duration" : 1447
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Ввод логина kabanov@tc.by",
+      "time" : {
+        "start" : 1523555067568,
+        "stop" : 1523555067660,
+        "duration" : 92
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "login",
+        "value" : "kabanov@tc.by"
+      } ]
+    }, {
+      "name" : "Ввод пароля MRZIt",
+      "time" : {
+        "start" : 1523555067663,
+        "stop" : 1523555067733,
+        "duration" : 70
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "MRZIt"
+      } ]
+    }, {
+      "name" : "Нажатие кнопки войти ",
+      "time" : {
+        "start" : 1523555067733,
+        "stop" : 1523555069187,
+        "duration" : 1454
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    } ],
+    "attachments" : [ ],
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "stepsCount" : 4
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.login"
+  }, {
+    "name" : "testClass",
+    "value" : "test.login.LoginPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginAsRecruiterNegativeIncorrectData"
+  }, {
+    "name" : "suite",
+    "value" : "test.login.LoginPageTest"
+  }, {
+    "name" : "host",
+    "value" : "WIN-6GBM20V5SU1"
+  }, {
+    "name" : "thread",
+    "value" : "20156@WIN-6GBM20V5SU1.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Авторизация"
+  }, {
+    "name" : "story",
+    "value" : "Сценарий 1 – Авторизация главный рекрутер Кабанов"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}

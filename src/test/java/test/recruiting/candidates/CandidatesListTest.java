@@ -2,6 +2,8 @@ package test.recruiting.candidates;
 
 import driver.WebDriverSingleton;
 import helper.GeneratorMode;
+import io.qameta.allure.*;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -39,6 +41,11 @@ public class CandidatesListTest extends Login {
         super.login("recruiter");
     };
     @Test
+    @DisplayName("поиск кандидата успех")
+    @Description("поиск кандидата успех")
+    @Feature("Подбор и адаптация: кандидаты")
+    @Story("Сценарий 2 – список кандидатов")
+    @Severity(SeverityLevel.NORMAL)
     public void searchPositive() throws InterruptedException {
         clp.enterCandidatesListPage();
         clp.fillinSearchField("морозова");
@@ -50,6 +57,11 @@ public class CandidatesListTest extends Login {
         //db connection required
     }
     @Test
+    @DisplayName("поиск кандидат не найден")
+    @Description("поиск кандидат не найден")
+    @Feature("Подбор и адаптация: кандидаты")
+    @Story("Сценарий 2 – список кандидатов")
+    @Severity(SeverityLevel.NORMAL)
     public void searchNegative() throws InterruptedException {
         clp.enterCandidatesListPage();
         clp.fillinSearchField(generateRandomString(12, GeneratorMode.ALPHA));
@@ -60,6 +72,11 @@ public class CandidatesListTest extends Login {
     }
 
     @Test
+    @DisplayName("нажатие кнопки создать резюме")
+    @Description("нажатие кнопки создать резюме")
+    @Feature("Подбор и адаптация: кандидаты")
+    @Story("Сценарий 2 – список кандидатов")
+    @Severity(SeverityLevel.NORMAL)
     public void clickCreate() throws InterruptedException {
         clp.enterCandidatesListPage();
         sleep(7000);
@@ -68,23 +85,28 @@ public class CandidatesListTest extends Login {
     }
 
     @Test
+    @DisplayName("фильтрация успех")
+    @Description("фильтрация успех")
+    @Feature("Подбор и адаптация: кандидаты")
+    @Story("Сценарий 2 – список кандидатов")
+    @Severity(SeverityLevel.NORMAL)
     public void filterPositive() throws InterruptedException {
         clp.enterCandidatesListPage();
         sleep(5000);
         clp.selectExperience(EXPERIENCE_TEST_VALUE);
-        sleep(2000);
-        clp.checkStatus(STATUS_TEST_VALUE);
-        sleep(2000);
-        clp.checkRelocation(RELOCATION_TEST_VALUE);
-        sleep(2000);
-        clp.checkVacancy(VACANCY_TEST_VALUE);
-        sleep(2000);
-        clp.checkEducation(EDUCATION_TEST_VALUE);
         sleep(5000);
+        clp.checkStatus(STATUS_TEST_VALUE);
+        sleep(5000);
+        clp.checkRelocation(RELOCATION_TEST_VALUE);
+        sleep(7000);
+        clp.checkVacancy(VACANCY_TEST_VALUE);
+        sleep(7000);
+        clp.checkEducation(EDUCATION_TEST_VALUE);
+        sleep(7000);
         clp.checkUniversity(UNIVERSITY_TEST_VALUE);
-        sleep(4000);
+        sleep(7000);
         clp.checkCompetence(COMPETENCE_TEST_VALUE);
-        sleep(4000);
+        sleep(7000);
         Assert.assertTrue(driver.findElement(By.xpath("//div[@id='filterTagsPanel' and div]")).isEnabled());
 
         //ASSERT correct candidate was found
@@ -93,14 +115,19 @@ public class CandidatesListTest extends Login {
 
     }
 
-    @Test
+   /* @Test
     public void filterNegative(){
         //ASSERT no candidate matches filter
         //db connection required
 
-    }
+    }*/
 
     @Test
+    @DisplayName("сброс параметров фильтра")
+    @Description("сброс параметров фильтра")
+    @Feature("Подбор и адаптация: кандидаты")
+    @Story("Сценарий 2 – список кандидатов")
+    @Severity(SeverityLevel.NORMAL)
     public void filterClear() throws InterruptedException {
         clp.enterCandidatesListPage();
         sleep(2000);
@@ -111,15 +138,15 @@ public class CandidatesListTest extends Login {
 
     }
 
-    @Test
+   /* @Test
     public void pagination(){
 
-    }
+    }*/
 
-    @Test
+   /* @Test
     public void checkCandidatesList(){
         //db connection required
-    }
+    }*/
 
 
     @After

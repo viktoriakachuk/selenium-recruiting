@@ -1,0 +1,101 @@
+[ {
+  "uid" : "340c0d31c627ad4f",
+  "name" : "пустая должность",
+  "time" : {
+    "start" : 1523555227985,
+    "stop" : 1523555237318,
+    "duration" : 9333
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "e3f81d582d4f45d0",
+  "name" : "Переход на страницу справочники",
+  "time" : {
+    "start" : 1523555133015,
+    "stop" : 1523555141738,
+    "duration" : 8723
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c87dc486f24c4770",
+  "name" : "неверный пароль",
+  "time" : {
+    "start" : 1523555066074,
+    "stop" : 1523555070412,
+    "duration" : 4338
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "db0ccb4b24db6c89",
+  "name" : "пустые компетенции",
+  "time" : {
+    "start" : 1523555165380,
+    "stop" : 1523555182587,
+    "duration" : 17207
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "eda0460b1617e202",
+  "name" : "Переход на главную страницу",
+  "time" : {
+    "start" : 1523555114856,
+    "stop" : 1523555125688,
+    "duration" : 10832
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "db3bc9a5fdddd94e",
+  "name" : "Переход на страницу подбор и адаптация",
+  "time" : {
+    "start" : 1523555149030,
+    "stop" : 1523555157949,
+    "duration" : 8919
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ded2333bfe76ee9f",
+  "name" : "пустой пароль",
+  "time" : {
+    "start" : 1523555078250,
+    "stop" : 1523555081440,
+    "duration" : 3190
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "72ef3c828b3842dc",
+  "name" : "пустой логин",
+  "time" : {
+    "start" : 1523555088711,
+    "stop" : 1523555092138,
+    "duration" : 3427
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "1c5dfa8b0a6fa1a4",
+  "name" : "создание заявки успех",
+  "time" : {
+    "start" : 1523555189942,
+    "stop" : 1523555220627,
+    "duration" : 30685
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "62138e8f78318253",
+  "name" : "авторизация успех",
+  "time" : {
+    "start" : 1523555099441,
+    "stop" : 1523555107021,
+    "duration" : 7580
+  },
+  "status" : "passed",
+  "severity" : "critical"
+} ]
