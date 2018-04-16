@@ -1,0 +1,186 @@
+{
+  "uid" : "e3c3dd251b164042",
+  "name" : "фильтрация успех",
+  "fullName" : "test.recruiting.candidates.CandidatesListTest.filterPositive",
+  "historyId" : "5cfd80b17d19ae6ac999b9b6b79edce0",
+  "time" : {
+    "start" : 1523861652617,
+    "stop" : 1523861682270,
+    "duration" : 29653
+  },
+  "status" : "passed",
+  "description" : "фильтрация успех",
+  "descriptionHtml" : "<p>фильтрация успех</p>",
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Вход на страницу авторизации",
+      "time" : {
+        "start" : 1523861652617,
+        "stop" : 1523861653954,
+        "duration" : 1337
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Ввод логина kabanov@tc.by",
+      "time" : {
+        "start" : 1523861653955,
+        "stop" : 1523861654023,
+        "duration" : 68
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "login",
+        "value" : "kabanov@tc.by"
+      } ]
+    }, {
+      "name" : "Ввод пароля welcome",
+      "time" : {
+        "start" : 1523861654023,
+        "stop" : 1523861654085,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "welcome"
+      } ]
+    }, {
+      "name" : "Нажатие кнопки войти ",
+      "time" : {
+        "start" : 1523861654085,
+        "stop" : 1523861656948,
+        "duration" : 2863
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Вход на страницу кандидатов",
+      "time" : {
+        "start" : 1523861656948,
+        "stop" : 1523861657885,
+        "duration" : 937
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Выбор опыта работы От 3 лет",
+      "time" : {
+        "start" : 1523861662895,
+        "stop" : 1523861663238,
+        "duration" : 343
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "experience",
+        "value" : "От 3 лет"
+      } ]
+    }, {
+      "name" : "Выбор статуса резюме New",
+      "time" : {
+        "start" : 1523861668245,
+        "stop" : 1523861668573,
+        "duration" : 328
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "New"
+      } ]
+    }, {
+      "name" : "Выбор возможности переезда true",
+      "time" : {
+        "start" : 1523861673581,
+        "stop" : 1523861673908,
+        "duration" : 327
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "value",
+        "value" : "true"
+      } ]
+    } ],
+    "attachments" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 8,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.recruiting.candidates"
+  }, {
+    "name" : "testClass",
+    "value" : "test.recruiting.candidates.CandidatesListTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "filterPositive"
+  }, {
+    "name" : "suite",
+    "value" : "test.recruiting.candidates.CandidatesListTest"
+  }, {
+    "name" : "host",
+    "value" : "WIN-6GBM20V5SU1"
+  }, {
+    "name" : "thread",
+    "value" : "4144@WIN-6GBM20V5SU1.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Подбор и адаптация: кандидаты"
+  }, {
+    "name" : "story",
+    "value" : "Сценарий 2 – список кандидатов"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}

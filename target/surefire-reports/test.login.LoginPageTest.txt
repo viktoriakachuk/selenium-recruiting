@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: test.login.LoginPageTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 51.571 s - in test.login.LoginPageTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 74.668 s - in test.login.LoginPageTest

@@ -1,166 +1,408 @@
 {
   "statistic" : {
-    "failed" : 0,
-    "broken" : 0,
+    "failed" : 2,
+    "broken" : 1,
     "skipped" : 0,
-    "passed" : 10,
+    "passed" : 29,
     "unknown" : 0,
-    "total" : 10
+    "total" : 32
   },
   "time" : {
-    "minDuration" : 3190,
-    "maxDuration" : 30685,
-    "sumDuration" : 104234,
-    "start" : 1523555066074,
-    "stop" : 1523555237318,
-    "duration" : 171244
+    "minDuration" : 3233,
+    "maxDuration" : 131741,
+    "sumDuration" : 627115,
+    "start" : 1523860948795,
+    "stop" : 1523861811000,
+    "duration" : 862205
   },
   "children" : [ {
-    "uid" : "ee7bfab57872d248",
+    "uid" : "2325831dd4aeaff6",
     "name" : "WIN-6GBM20V5SU1",
     "time" : {
-      "minDuration" : 3190,
-      "maxDuration" : 30685,
-      "sumDuration" : 104234,
-      "start" : 1523555066074,
-      "stop" : 1523555237318,
-      "duration" : 171244
+      "minDuration" : 3233,
+      "maxDuration" : 131741,
+      "sumDuration" : 627115,
+      "start" : 1523860948795,
+      "stop" : 1523861811000,
+      "duration" : 862205
     },
     "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
+      "failed" : 2,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 10,
+      "passed" : 29,
       "unknown" : 0,
-      "total" : 10
+      "total" : 32
     },
     "type" : "TestGroupNode",
     "children" : [ {
-      "uid" : "902a06f74dd11df",
-      "name" : "20156@WIN-6GBM20V5SU1.main(1)",
+      "uid" : "3db4e6297a8d9fa2",
+      "name" : "4144@WIN-6GBM20V5SU1.main(1)",
       "time" : {
-        "minDuration" : 3190,
-        "maxDuration" : 30685,
-        "sumDuration" : 104234,
-        "start" : 1523555066074,
-        "stop" : 1523555237318,
-        "duration" : 171244
+        "minDuration" : 3233,
+        "maxDuration" : 131741,
+        "sumDuration" : 627115,
+        "start" : 1523860948795,
+        "stop" : 1523861811000,
+        "duration" : 862205
       },
       "statistic" : {
-        "failed" : 0,
-        "broken" : 0,
+        "failed" : 2,
+        "broken" : 1,
         "skipped" : 0,
-        "passed" : 10,
+        "passed" : 29,
         "unknown" : 0,
-        "total" : 10
+        "total" : 32
       },
       "type" : "TestGroupNode",
       "children" : [ {
-        "uid" : "340c0d31c627ad4f",
-        "name" : "пустая должность",
+        "uid" : "2fc61810fac7a147",
+        "name" : "пустое имя",
         "time" : {
-          "start" : 1523555227985,
-          "stop" : 1523555237318,
-          "duration" : 9333
+          "start" : 1523861419929,
+          "stop" : 1523861428431,
+          "duration" : 8502
         },
         "status" : "passed",
         "flaky" : false,
         "type" : "TestCaseNode"
       }, {
-        "uid" : "e3f81d582d4f45d0",
+        "uid" : "743cf7ee290e0874",
         "name" : "Переход на страницу справочники",
         "time" : {
-          "start" : 1523555133015,
-          "stop" : 1523555141738,
-          "duration" : 8723
+          "start" : 1523861042772,
+          "stop" : 1523861050623,
+          "duration" : 7851
         },
         "status" : "passed",
         "flaky" : false,
         "type" : "TestCaseNode"
       }, {
-        "uid" : "c87dc486f24c4770",
-        "name" : "неверный пароль",
+        "uid" : "2ed638b14f207773",
+        "name" : "нажатие кнопки отмена",
         "time" : {
-          "start" : 1523555066074,
-          "stop" : 1523555070412,
-          "duration" : 4338
+          "start" : 1523861382134,
+          "stop" : 1523861391923,
+          "duration" : 9789
         },
         "status" : "passed",
         "flaky" : false,
         "type" : "TestCaseNode"
       }, {
-        "uid" : "db0ccb4b24db6c89",
-        "name" : "пустые компетенции",
+        "uid" : "31976742382eff2b",
+        "name" : "превышение длины поля",
         "time" : {
-          "start" : 1523555165380,
-          "stop" : 1523555182587,
-          "duration" : 17207
+          "start" : 1523861463043,
+          "stop" : 1523861471139,
+          "duration" : 8096
         },
         "status" : "passed",
         "flaky" : false,
         "type" : "TestCaseNode"
       }, {
-        "uid" : "eda0460b1617e202",
-        "name" : "Переход на главную страницу",
+        "uid" : "56feb1f709f59057",
+        "name" : "поиск кандидата успех",
         "time" : {
-          "start" : 1523555114856,
-          "stop" : 1523555125688,
-          "duration" : 10832
+          "start" : 1523861478569,
+          "stop" : 1523861487006,
+          "duration" : 8437
         },
         "status" : "passed",
         "flaky" : false,
         "type" : "TestCaseNode"
       }, {
-        "uid" : "db3bc9a5fdddd94e",
-        "name" : "Переход на страницу подбор и адаптация",
-        "time" : {
-          "start" : 1523555149030,
-          "stop" : 1523555157949,
-          "duration" : 8919
-        },
-        "status" : "passed",
-        "flaky" : false,
-        "type" : "TestCaseNode"
-      }, {
-        "uid" : "ded2333bfe76ee9f",
-        "name" : "пустой пароль",
-        "time" : {
-          "start" : 1523555078250,
-          "stop" : 1523555081440,
-          "duration" : 3190
-        },
-        "status" : "passed",
-        "flaky" : false,
-        "type" : "TestCaseNode"
-      }, {
-        "uid" : "72ef3c828b3842dc",
+        "uid" : "838d8472585b2f6c",
         "name" : "пустой логин",
         "time" : {
-          "start" : 1523555088711,
-          "stop" : 1523555092138,
-          "duration" : 3427
+          "start" : 1523860980149,
+          "stop" : 1523860983382,
+          "duration" : 3233
         },
         "status" : "passed",
         "flaky" : false,
         "type" : "TestCaseNode"
       }, {
-        "uid" : "1c5dfa8b0a6fa1a4",
+        "uid" : "3bb3878b5d7b68fa",
+        "name" : "Переход на страницу подбор и адаптация",
+        "time" : {
+          "start" : 1523861057975,
+          "stop" : 1523861065569,
+          "duration" : 7594
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "21fdc098b70048e7",
+        "name" : "создание нового вопроса и добавление в базу вопросов",
+        "time" : {
+          "start" : 1523861793491,
+          "stop" : 1523861811000,
+          "duration" : 17509
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "c405c7170a5768e3",
+        "name" : "сброс параметров фильтра",
+        "time" : {
+          "start" : 1523861633434,
+          "stop" : 1523861645250,
+          "duration" : 11816
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "3d67307cb33a6268",
+        "name" : "неверный пароль",
+        "time" : {
+          "start" : 1523860948795,
+          "stop" : 1523860960430,
+          "duration" : 11635
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "1f42ae8933c16d39",
         "name" : "создание заявки успех",
         "time" : {
-          "start" : 1523555189942,
-          "stop" : 1523555220627,
-          "duration" : 30685
+          "start" : 1523861137754,
+          "stop" : 1523861167147,
+          "duration" : 29393
         },
         "status" : "passed",
         "flaky" : false,
         "type" : "TestCaseNode"
       }, {
-        "uid" : "62138e8f78318253",
+        "uid" : "a61399a0ac7e3ed2",
+        "name" : "прикрепление файла неверного формата",
+        "time" : {
+          "start" : 1523861309820,
+          "stop" : 1523861325015,
+          "duration" : 15195
+        },
+        "status" : "failed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "e3c3dd251b164042",
+        "name" : "фильтрация успех",
+        "time" : {
+          "start" : 1523861652617,
+          "stop" : 1523861682270,
+          "duration" : 29653
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "1a32c53476cb11a",
+        "name" : "пустой пароль",
+        "time" : {
+          "start" : 1523860969107,
+          "stop" : 1523860972781,
+          "duration" : 3674
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "dd113c1374909857",
+        "name" : "рассмотрение и согласование заявки, публикация вакансии",
+        "time" : {
+          "start" : 1523861713744,
+          "stop" : 1523861786186,
+          "duration" : 72442
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "8c2053746dde0e4f",
+        "name" : "поиск кандидат не найден",
+        "time" : {
+          "start" : 1523861494342,
+          "stop" : 1523861626083,
+          "duration" : 131741
+        },
+        "status" : "broken",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "7f6526e3e0daa082",
+        "name" : "пустая должность",
+        "time" : {
+          "start" : 1523861174546,
+          "stop" : 1523861182767,
+          "duration" : 8221
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "d187a684b6dc98e2",
+        "name" : "неверный ввод даты рождения",
+        "time" : {
+          "start" : 1523861263767,
+          "stop" : 1523861272028,
+          "duration" : 8261
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "abf48217989253d5",
         "name" : "авторизация успех",
         "time" : {
-          "start" : 1523555099441,
-          "stop" : 1523555107021,
-          "duration" : 7580
+          "start" : 1523860991888,
+          "stop" : 1523860998264,
+          "duration" : 6376
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "feff48730521730f",
+        "name" : "неверный ввод телефона",
+        "time" : {
+          "start" : 1523861366528,
+          "stop" : 1523861374767,
+          "duration" : 8239
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "4ada145a478e13fe",
+        "name" : "загрузка резюме из файла при введенных ранее данных",
+        "time" : {
+          "start" : 1523861436282,
+          "stop" : 1523861455130,
+          "duration" : 18848
+        },
+        "status" : "failed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "f7bd7de0c8b5185",
+        "name" : "пустая фамилия",
+        "time" : {
+          "start" : 1523861294287,
+          "stop" : 1523861302484,
+          "duration" : 8197
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "26d04b88706a112f",
+        "name" : "возврат к списку кандидатов",
+        "time" : {
+          "start" : 1523861347949,
+          "stop" : 1523861359222,
+          "duration" : 11273
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "c1a78abdc3d21ba5",
+        "name" : "пустые компетенции",
+        "time" : {
+          "start" : 1523861114058,
+          "stop" : 1523861129919,
+          "duration" : 15861
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "74ce9d4502dc781d",
+        "name" : "нажатие кнопки создать резюме",
+        "time" : {
+          "start" : 1523861689575,
+          "stop" : 1523861706408,
+          "duration" : 16833
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "3624db0f4bb32ab3",
+        "name" : "пустой тип кандидата",
+        "time" : {
+          "start" : 1523861072983,
+          "stop" : 1523861106534,
+          "duration" : 33551
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "d488df494b3ca376",
+        "name" : "неверный ввод имейла",
+        "time" : {
+          "start" : 1523861332694,
+          "stop" : 1523861340504,
+          "duration" : 7810
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "b469201303afc301",
+        "name" : "пустая контактная информация",
+        "time" : {
+          "start" : 1523861279364,
+          "stop" : 1523861286982,
+          "duration" : 7618
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "bcf3e63758c1a04f",
+        "name" : "удаление резюме",
+        "time" : {
+          "start" : 1523861399244,
+          "stop" : 1523861412608,
+          "duration" : 13364
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "8579df45cbd8115b",
+        "name" : "Переход на главную страницу",
+        "time" : {
+          "start" : 1523861006093,
+          "stop" : 1523861034437,
+          "duration" : 28344
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "6de8f168cfb3e3ac",
+        "name" : "загрузка резюме из файла",
+        "time" : {
+          "start" : 1523861239917,
+          "stop" : 1523861256244,
+          "duration" : 16327
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "5df77377631beaca",
+        "name" : "Создание резюме успех",
+        "time" : {
+          "start" : 1523861191164,
+          "stop" : 1523861232596,
+          "duration" : 41432
         },
         "status" : "passed",
         "flaky" : false,

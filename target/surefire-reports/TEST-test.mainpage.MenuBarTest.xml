@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="test.mainpage.MenuBarTest" time="50.875" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="test.mainpage.MenuBarTest" time="67.227" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2017.2.6"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -61,7 +61,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="loadHomePageFromMenuBar" classname="test.mainpage.MenuBarTest" time="10.834"/>
-  <testcase name="loadDirectoriesPageFromMenuBar" classname="test.mainpage.MenuBarTest" time="8.724"/>
-  <testcase name="loadRecruitingPageFromMenuBar" classname="test.mainpage.MenuBarTest" time="8.925"/>
+  <testcase name="loadHomePageFromMenuBar" classname="test.mainpage.MenuBarTest" time="28.344"/>
+  <testcase name="loadDirectoriesPageFromMenuBar" classname="test.mainpage.MenuBarTest" time="7.883"/>
+  <testcase name="loadRecruitingPageFromMenuBar" classname="test.mainpage.MenuBarTest" time="7.594"/>
 </testsuite>

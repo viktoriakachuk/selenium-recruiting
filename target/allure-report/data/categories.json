@@ -1,1 +1,157 @@
-{ }
+{
+  "statistic" : {
+    "failed" : 2,
+    "broken" : 1,
+    "skipped" : 0,
+    "passed" : 0,
+    "unknown" : 0,
+    "total" : 3
+  },
+  "time" : {
+    "minDuration" : 15195,
+    "maxDuration" : 131741,
+    "sumDuration" : 165784,
+    "start" : 1523861309820,
+    "stop" : 1523861626083,
+    "duration" : 316263
+  },
+  "children" : [ {
+    "uid" : "4b9abbc437200499",
+    "name" : "Product defects",
+    "time" : {
+      "minDuration" : 15195,
+      "maxDuration" : 18848,
+      "sumDuration" : 34043,
+      "start" : 1523861309820,
+      "stop" : 1523861455130,
+      "duration" : 145310
+    },
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "type" : "TestGroupNode",
+    "children" : [ {
+      "uid" : "d4112bcf7a65a3a4",
+      "name" : "expected:<[красивое сообщение об ошибке, например, неверный формат прикрепленного файла]> but was:<[/opt/liferay-portal-6.2-ce-ga6/tomcat-7.0.62/temp/upload_00065520.txt (No such file or directory)]>",
+      "time" : {
+        "minDuration" : 15195,
+        "maxDuration" : 15195,
+        "sumDuration" : 15195,
+        "start" : 1523861309820,
+        "stop" : 1523861325015,
+        "duration" : 15195
+      },
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 1
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "a61399a0ac7e3ed2",
+        "name" : "прикрепление файла неверного формата",
+        "time" : {
+          "start" : 1523861309820,
+          "stop" : 1523861325015,
+          "duration" : 15195
+        },
+        "status" : "failed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      } ]
+    }, {
+      "uid" : "c25c87caeabdc206",
+      "name" : "java.lang.AssertionError",
+      "time" : {
+        "minDuration" : 18848,
+        "maxDuration" : 18848,
+        "sumDuration" : 18848,
+        "start" : 1523861436282,
+        "stop" : 1523861455130,
+        "duration" : 18848
+      },
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 1
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "4ada145a478e13fe",
+        "name" : "загрузка резюме из файла при введенных ранее данных",
+        "time" : {
+          "start" : 1523861436282,
+          "stop" : 1523861455130,
+          "duration" : 18848
+        },
+        "status" : "failed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      } ]
+    } ]
+  }, {
+    "uid" : "d72afd0b3d18792c",
+    "name" : "Test defects",
+    "time" : {
+      "minDuration" : 131741,
+      "maxDuration" : 131741,
+      "sumDuration" : 131741,
+      "start" : 1523861494342,
+      "stop" : 1523861626083,
+      "duration" : 131741
+    },
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "type" : "TestGroupNode",
+    "children" : [ {
+      "uid" : "697bdd2bff495dfb",
+      "name" : "Expected condition failed: waiting for visibility of element located by By.xpath: //tc-alert[@id='emptyListSearch']//div[@class='message'] (tried for 120 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "minDuration" : 131741,
+        "maxDuration" : 131741,
+        "sumDuration" : 131741,
+        "start" : 1523861494342,
+        "stop" : 1523861626083,
+        "duration" : 131741
+      },
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 1
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "8c2053746dde0e4f",
+        "name" : "поиск кандидат не найден",
+        "time" : {
+          "start" : 1523861494342,
+          "stop" : 1523861626083,
+          "duration" : 131741
+        },
+        "status" : "broken",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      } ]
+    } ]
+  } ]
+}

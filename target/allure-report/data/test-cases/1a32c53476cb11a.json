@@ -1,0 +1,104 @@
+{
+  "uid" : "1a32c53476cb11a",
+  "name" : "пустой пароль",
+  "fullName" : "test.login.LoginPageTest.loginAsRecruiterNegativeEmptyPassword",
+  "historyId" : "2920981d83aad254c0437a791f7a63b",
+  "time" : {
+    "start" : 1523860969107,
+    "stop" : 1523860972781,
+    "duration" : 3674
+  },
+  "status" : "passed",
+  "description" : "Авторизация пустой пароль",
+  "descriptionHtml" : "<p>Авторизация пустой пароль</p>",
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Вход на страницу авторизации",
+      "time" : {
+        "start" : 1523860969107,
+        "stop" : 1523860970426,
+        "duration" : 1319
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Ввод логина kabanov@tc.by",
+      "time" : {
+        "start" : 1523860970426,
+        "stop" : 1523860970510,
+        "duration" : 84
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "login",
+        "value" : "kabanov@tc.by"
+      } ]
+    }, {
+      "name" : "Нажатие кнопки войти ",
+      "time" : {
+        "start" : 1523860970510,
+        "stop" : 1523860971249,
+        "duration" : 739
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    } ],
+    "attachments" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.login"
+  }, {
+    "name" : "testClass",
+    "value" : "test.login.LoginPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginAsRecruiterNegativeEmptyPassword"
+  }, {
+    "name" : "suite",
+    "value" : "test.login.LoginPageTest"
+  }, {
+    "name" : "host",
+    "value" : "WIN-6GBM20V5SU1"
+  }, {
+    "name" : "thread",
+    "value" : "4144@WIN-6GBM20V5SU1.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Авторизация"
+  }, {
+    "name" : "story",
+    "value" : "Сценарий 1 – Авторизация главный рекрутер Кабанов"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "minor",
+    "categories" : [ ]
+  }
+}

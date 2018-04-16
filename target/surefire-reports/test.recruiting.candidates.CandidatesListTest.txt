@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: test.recruiting.candidates.CandidatesListTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 235.238 s <<< FAILURE! - in test.recruiting.candidates.CandidatesListTest
+searchNegative(test.recruiting.candidates.CandidatesListTest)  Time elapsed: 131.741 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //tc-alert[@id='emptyListSearch']//div[@class='message'] (tried for 120 second(s) with 500 milliseconds interval)
+	at test.recruiting.candidates.CandidatesListTest.searchNegative(CandidatesListTest.java:70)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: //tc-alert[@id='emptyListSearch']//div[@class='message']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'WIN-6GBM20V5SU1', ip: '192.168.100.8', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
+	at test.recruiting.candidates.CandidatesListTest.searchNegative(CandidatesListTest.java:70)
+

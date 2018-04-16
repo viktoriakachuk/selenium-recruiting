@@ -1,0 +1,183 @@
+{
+  "uid" : "f7bd7de0c8b5185",
+  "name" : "пустая фамилия",
+  "fullName" : "test.recruiting.candidates.CandidateFormTest.fillinCandidateFormNegativeEmptySurname",
+  "historyId" : "57d92893bdd10eb9fb9bbc33a2ca895d",
+  "time" : {
+    "start" : 1523861294287,
+    "stop" : 1523861302484,
+    "duration" : 8197
+  },
+  "status" : "passed",
+  "description" : "пустая фамилия",
+  "descriptionHtml" : "<p>пустая фамилия</p>",
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Вход на страницу авторизации",
+      "time" : {
+        "start" : 1523861294303,
+        "stop" : 1523861295742,
+        "duration" : 1439
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Ввод логина kabanov@tc.by",
+      "time" : {
+        "start" : 1523861295742,
+        "stop" : 1523861295801,
+        "duration" : 59
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "login",
+        "value" : "kabanov@tc.by"
+      } ]
+    }, {
+      "name" : "Ввод пароля welcome",
+      "time" : {
+        "start" : 1523861295801,
+        "stop" : 1523861295846,
+        "duration" : 45
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "welcome"
+      } ]
+    }, {
+      "name" : "Нажатие кнопки войти ",
+      "time" : {
+        "start" : 1523861295846,
+        "stop" : 1523861298601,
+        "duration" : 2755
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Вход на страницу создания резюме кандидата",
+      "time" : {
+        "start" : 1523861298601,
+        "stop" : 1523861300360,
+        "duration" : 1759
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Ввод имени PWmEz",
+      "time" : {
+        "start" : 1523861300360,
+        "stop" : 1523861300510,
+        "duration" : 150
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "name",
+        "value" : "PWmEz"
+      } ]
+    }, {
+      "name" : "Ввод телефона 9163922",
+      "time" : {
+        "start" : 1523861300510,
+        "stop" : 1523861300584,
+        "duration" : 74
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "telephone",
+        "value" : "9163922"
+      } ]
+    }, {
+      "name" : "Сохранение",
+      "time" : {
+        "start" : 1523861300584,
+        "stop" : 1523861301000,
+        "duration" : 416
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    } ],
+    "attachments" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 8,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.recruiting.candidates"
+  }, {
+    "name" : "testClass",
+    "value" : "test.recruiting.candidates.CandidateFormTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "fillinCandidateFormNegativeEmptySurname"
+  }, {
+    "name" : "suite",
+    "value" : "test.recruiting.candidates.CandidateFormTest"
+  }, {
+    "name" : "host",
+    "value" : "WIN-6GBM20V5SU1"
+  }, {
+    "name" : "thread",
+    "value" : "4144@WIN-6GBM20V5SU1.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Подбор и адаптация: кандидаты"
+  }, {
+    "name" : "story",
+    "value" : "Сценарий 1 – создание резюме кандидата"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "minor",
+    "categories" : [ ]
+  }
+}

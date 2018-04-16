@@ -1,0 +1,135 @@
+{
+  "uid" : "3bb3878b5d7b68fa",
+  "name" : "Переход на страницу подбор и адаптация",
+  "fullName" : "test.mainpage.MenuBarTest.loadRecruitingPageFromMenuBar",
+  "historyId" : "3eaf992acf52b05daaa6c46ee601865e",
+  "time" : {
+    "start" : 1523861057975,
+    "stop" : 1523861065569,
+    "duration" : 7594
+  },
+  "status" : "passed",
+  "description" : "Переход на страницу подбор и адаптация",
+  "descriptionHtml" : "<p>Переход на страницу подбор и адаптация</p>",
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Вход на страницу авторизации",
+      "time" : {
+        "start" : 1523861057975,
+        "stop" : 1523861059391,
+        "duration" : 1416
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Ввод логина kabanov@tc.by",
+      "time" : {
+        "start" : 1523861059392,
+        "stop" : 1523861059453,
+        "duration" : 61
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "login",
+        "value" : "kabanov@tc.by"
+      } ]
+    }, {
+      "name" : "Ввод пароля welcome",
+      "time" : {
+        "start" : 1523861059453,
+        "stop" : 1523861059508,
+        "duration" : 55
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "welcome"
+      } ]
+    }, {
+      "name" : "Нажатие кнопки войти ",
+      "time" : {
+        "start" : 1523861059508,
+        "stop" : 1523861062414,
+        "duration" : 2906
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Выбор меню Подбор и адаптация",
+      "time" : {
+        "start" : 1523861062415,
+        "stop" : 1523861064045,
+        "duration" : 1630
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    } ],
+    "attachments" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 5,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.mainpage"
+  }, {
+    "name" : "testClass",
+    "value" : "test.mainpage.MenuBarTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loadRecruitingPageFromMenuBar"
+  }, {
+    "name" : "suite",
+    "value" : "test.mainpage.MenuBarTest"
+  }, {
+    "name" : "host",
+    "value" : "WIN-6GBM20V5SU1"
+  }, {
+    "name" : "thread",
+    "value" : "4144@WIN-6GBM20V5SU1.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Меню"
+  }, {
+    "name" : "story",
+    "value" : "Сценарий 1 – Навигация по меню"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}

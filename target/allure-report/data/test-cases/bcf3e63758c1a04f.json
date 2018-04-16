@@ -1,0 +1,214 @@
+{
+  "uid" : "bcf3e63758c1a04f",
+  "name" : "удаление резюме",
+  "fullName" : "test.recruiting.candidates.CandidateFormTest.deleteCandidate",
+  "historyId" : "fe0ac8cb347006acc9305389da6da744",
+  "time" : {
+    "start" : 1523861399244,
+    "stop" : 1523861412608,
+    "duration" : 13364
+  },
+  "status" : "passed",
+  "description" : "удаление резюме",
+  "descriptionHtml" : "<p>удаление резюме</p>",
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Вход на страницу авторизации",
+      "time" : {
+        "start" : 1523861399259,
+        "stop" : 1523861400685,
+        "duration" : 1426
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Ввод логина kabanov@tc.by",
+      "time" : {
+        "start" : 1523861400685,
+        "stop" : 1523861400742,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "login",
+        "value" : "kabanov@tc.by"
+      } ]
+    }, {
+      "name" : "Ввод пароля welcome",
+      "time" : {
+        "start" : 1523861400742,
+        "stop" : 1523861400790,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "welcome"
+      } ]
+    }, {
+      "name" : "Нажатие кнопки войти ",
+      "time" : {
+        "start" : 1523861400790,
+        "stop" : 1523861403497,
+        "duration" : 2707
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Вход на страницу создания резюме кандидата",
+      "time" : {
+        "start" : 1523861403497,
+        "stop" : 1523861405136,
+        "duration" : 1639
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Ввод имени kdEPH",
+      "time" : {
+        "start" : 1523861405137,
+        "stop" : 1523861405278,
+        "duration" : 141
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "name",
+        "value" : "kdEPH"
+      } ]
+    }, {
+      "name" : "Ввод фамилии IZkTf",
+      "time" : {
+        "start" : 1523861405279,
+        "stop" : 1523861405335,
+        "duration" : 56
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "surname",
+        "value" : "IZkTf"
+      } ]
+    }, {
+      "name" : "Ввод телефона 4339551",
+      "time" : {
+        "start" : 1523861405335,
+        "stop" : 1523861405395,
+        "duration" : 60
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "telephone",
+        "value" : "4339551"
+      } ]
+    }, {
+      "name" : "Сохранение",
+      "time" : {
+        "start" : 1523861405395,
+        "stop" : 1523861407228,
+        "duration" : 1833
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Удаление",
+      "time" : {
+        "start" : 1523861409239,
+        "stop" : 1523861410783,
+        "duration" : 1544
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    } ],
+    "attachments" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 10,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.recruiting.candidates"
+  }, {
+    "name" : "testClass",
+    "value" : "test.recruiting.candidates.CandidateFormTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "deleteCandidate"
+  }, {
+    "name" : "suite",
+    "value" : "test.recruiting.candidates.CandidateFormTest"
+  }, {
+    "name" : "host",
+    "value" : "WIN-6GBM20V5SU1"
+  }, {
+    "name" : "thread",
+    "value" : "4144@WIN-6GBM20V5SU1.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Подбор и адаптация: кандидаты"
+  }, {
+    "name" : "story",
+    "value" : "Сценарий 1 – создание резюме кандидата"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "minor",
+    "categories" : [ ]
+  }
+}

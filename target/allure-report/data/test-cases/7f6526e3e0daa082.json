@@ -1,0 +1,149 @@
+{
+  "uid" : "7f6526e3e0daa082",
+  "name" : "пустая должность",
+  "fullName" : "test.recruiting.ApplicationFormTest.fillinApplicationNegativeEmptyPosition",
+  "historyId" : "c0eeb4096cf4b913acd90c5f35b1374e",
+  "time" : {
+    "start" : 1523861174546,
+    "stop" : 1523861182767,
+    "duration" : 8221
+  },
+  "status" : "passed",
+  "description" : "пустая должность",
+  "descriptionHtml" : "<p>пустая должность</p>",
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Вход на страницу авторизации",
+      "time" : {
+        "start" : 1523861174561,
+        "stop" : 1523861176350,
+        "duration" : 1789
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Ввод логина kabanov@tc.by",
+      "time" : {
+        "start" : 1523861176350,
+        "stop" : 1523861176403,
+        "duration" : 53
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "login",
+        "value" : "kabanov@tc.by"
+      } ]
+    }, {
+      "name" : "Ввод пароля welcome",
+      "time" : {
+        "start" : 1523861176403,
+        "stop" : 1523861176449,
+        "duration" : 46
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "welcome"
+      } ]
+    }, {
+      "name" : "Нажатие кнопки войти ",
+      "time" : {
+        "start" : 1523861176450,
+        "stop" : 1523861179125,
+        "duration" : 2675
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Вход на страницу создание заявки",
+      "time" : {
+        "start" : 1523861179125,
+        "stop" : 1523861180476,
+        "duration" : 1351
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Сохранение",
+      "time" : {
+        "start" : 1523861180723,
+        "stop" : 1523861181211,
+        "duration" : 488
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    } ],
+    "attachments" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 6,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.recruiting"
+  }, {
+    "name" : "testClass",
+    "value" : "test.recruiting.ApplicationFormTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "fillinApplicationNegativeEmptyPosition"
+  }, {
+    "name" : "suite",
+    "value" : "test.recruiting.ApplicationFormTest"
+  }, {
+    "name" : "host",
+    "value" : "WIN-6GBM20V5SU1"
+  }, {
+    "name" : "thread",
+    "value" : "4144@WIN-6GBM20V5SU1.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Подбор и адаптация: заявки"
+  }, {
+    "name" : "story",
+    "value" : "Сценарий 1 – создание заявки"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "minor",
+    "categories" : [ ]
+  }
+}

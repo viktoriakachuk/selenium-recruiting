@@ -28,7 +28,7 @@ public class DomParser {
                 if(node.getNodeType() == Node.ELEMENT_NODE)
                 {
                     Element element = (Element)node;
-                    if (element.getElementsByTagName("role").item(0).getChildNodes().item(0).getNodeValue().equals(role));
+                    if (element.getAttribute("name").equals(role))
                     {
                         String login = element.getElementsByTagName("login").item(0).getChildNodes().item(0).getNodeValue();
                         String password = element.getElementsByTagName("password").item(0).getChildNodes().item(0).getNodeValue();

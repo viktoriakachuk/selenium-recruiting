@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="windows-1251"?>
 	<users>
-		<user>
+		<user name="recruiter">
 			<role>recruiter</role>
 			<login>kabanov@tc.by</login>
+			<password>welcome</password>
+		</user>
+		<user name="krmadmin">
+			<role>krmadmin</role>
+			<login>sokolov@tc.by</login>
 			<password>welcome</password>
 		</user>
 	</users>

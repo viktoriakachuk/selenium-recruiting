@@ -46,7 +46,7 @@ public class ApplicationFormTest extends Login {
         sleep(2000);
         ap.fillinPositionField("Бухгалтер");
         sleep(1000);
-        ap.fillinClosingDate("02.04.2018");
+        ap.fillinClosingDate("20.04.2018");
         ap.clickPriorityRadio();
         ap.fillinQuantityField("2");
         ap.fillinReasonField("Расширение отдела");
@@ -88,7 +88,7 @@ public class ApplicationFormTest extends Login {
         Assert.assertEquals("Ошибка!\nПроверьте обязательные поля",message);
     }
 
-  /*  @Test
+    @Test
     @DisplayName("пустой тип кандидата")
     @Description("пустой тип кандидата")
     @Feature("Подбор и адаптация: заявки")
@@ -98,12 +98,13 @@ public class ApplicationFormTest extends Login {
         ap.enterApplicationPage();
         ap.fillinPositionField("Бухгалтер");
         Assert.assertEquals("Выберите тип кандидатов",driver.findElement(By.xpath("//div[@class='help-block help']")).getText());
+        sleep(4000);
+        ap.fillinUndesirableExperienceField("-");
+        ap.fillinCompetence(LAYER_TEST_VALUE,CATHEGORY_TEST_VALUE,COMPETENCE_TEST_VALUE);
+        sleep(2000);
         ap.save();
-
-        WebDriverWait element = new WebDriverWait(driver, 120);
-        String message = element.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='message']"))).getText();
-        Assert.assertEquals("Ошибка!\nПроверьте обязательные поля",message);
-    }*/
+        Assert.assertEquals("Проверьте обязательные поля",driver.findElement(By.xpath("//span[@id='errorMessage']")).getText());
+    }
     @Test
     @DisplayName("пустые компетенции")
     @Description("пустые компетенции")

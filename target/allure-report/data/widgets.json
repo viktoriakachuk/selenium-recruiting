@@ -2,34 +2,64 @@
   "summary" : {
     "reportName" : "Allure Report",
     "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
+      "failed" : 2,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 10,
+      "passed" : 29,
       "unknown" : 0,
-      "total" : 10
+      "total" : 32
     },
     "time" : {
-      "minDuration" : 3190,
-      "maxDuration" : 30685,
-      "sumDuration" : 104234,
-      "start" : 1523555066074,
-      "stop" : 1523555237318,
-      "duration" : 171244
+      "minDuration" : 3233,
+      "maxDuration" : 131741,
+      "sumDuration" : 627115,
+      "start" : 1523860948795,
+      "stop" : 1523861811000,
+      "duration" : 862205
     }
   },
   "environment" : [ ],
   "history-trend" : [ {
-    "failed" : 0,
-    "broken" : 0,
+    "failed" : 2,
+    "broken" : 1,
     "skipped" : 0,
-    "passed" : 10,
+    "passed" : 29,
     "unknown" : 0,
-    "total" : 10
+    "total" : 32
   } ],
   "behaviors" : {
-    "total" : 3,
+    "total" : 6,
     "items" : [ {
+      "name" : "Подбор и адаптация: кандидаты",
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      }
+    }, {
+      "name" : "Подбор и адаптация: взаимодействие заявок, вакансий и кандидатов",
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 1
+      }
+    }, {
+      "name" : "Подбор и адаптация: вопросы",
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 1
+      }
+    }, {
       "name" : "Авторизация",
       "statistic" : {
         "failed" : 0,

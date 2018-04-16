@@ -79,6 +79,7 @@ public class CandidateFormTest extends Login {
         Assert.assertEquals(driver.findElement(By.xpath("//span[@class='link']")).getText(), ATTACHMENT_TEST_VALUE.substring(22));
         cfp.fillinCompetence(LAYER_TEST_VALUE,CATHEGORY_TEST_VALUE,COMPETENCE_TEST_VALUE,COMPETENCE_LEVEL_TEST_VALUE);
         cfp.clickSave();
+        sleep(5000);
         Assert.assertEquals("Резюме было успешно сохранено", driver.findElement(By.xpath("//span[@id='successMessage']")).getText());
         //assert new entry
         //db connection required

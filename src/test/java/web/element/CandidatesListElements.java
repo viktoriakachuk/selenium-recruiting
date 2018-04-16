@@ -21,7 +21,7 @@ public class CandidatesListElements {
     public static Element COMPETENCE = new Element ("competence", By.xpath("//div[@id='competencies_filter']//input"));
 
     //search elements
-    public static Element SEARCH = new Element ("search", By.xpath("//input[@id='searchInput']"));
+    public static Element SEARCH = new Element ("search", By.xpath("//input[@placeholder='Поиск...']"));
     public static Element CLEAR_SEARCH = new Element ("clear search", By.xpath("//a[@id='filter-clear-link']"));
 
     //create element

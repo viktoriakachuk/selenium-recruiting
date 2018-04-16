@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: test.recruiting.candidates.CandidateFormTest
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 288.372 s <<< FAILURE! - in test.recruiting.candidates.CandidateFormTest
+attachmentNegative(test.recruiting.candidates.CandidateFormTest)  Time elapsed: 15.18 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[красивое сообщение об ошибке, например, неверный формат прикрепленного файла]> but was:<[/opt/liferay-portal-6.2-ce-ga6/tomcat-7.0.62/temp/upload_00065520.txt (No such file or directory)]>
+	at test.recruiting.candidates.CandidateFormTest.attachmentNegative(CandidateFormTest.java:246)
+
+loadCVAfterInputData(test.recruiting.candidates.CandidateFormTest)  Time elapsed: 18.848 s  <<< FAILURE!
+java.lang.AssertionError
+	at test.recruiting.candidates.CandidateFormTest.loadCVAfterInputData(CandidateFormTest.java:264)
+

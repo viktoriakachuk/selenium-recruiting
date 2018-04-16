@@ -1,0 +1,228 @@
+{
+  "uid" : "21fdc098b70048e7",
+  "name" : "создание нового вопроса и добавление в базу вопросов",
+  "fullName" : "test.recruiting.QuestionsTest.addNewQuestionPositive",
+  "historyId" : "91868c37dff6dc081f97daa2ca19a2b1",
+  "time" : {
+    "start" : 1523861793491,
+    "stop" : 1523861811000,
+    "duration" : 17509
+  },
+  "status" : "passed",
+  "description" : "создание нового вопроса и добавление в базу вопросов",
+  "descriptionHtml" : "<p>создание нового вопроса и добавление в базу вопросов</p>",
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Вход на страницу авторизации",
+      "time" : {
+        "start" : 1523861793491,
+        "stop" : 1523861794929,
+        "duration" : 1438
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Ввод логина sokolov@tc.by",
+      "time" : {
+        "start" : 1523861794929,
+        "stop" : 1523861794995,
+        "duration" : 66
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "login",
+        "value" : "sokolov@tc.by"
+      } ]
+    }, {
+      "name" : "Ввод пароля welcome",
+      "time" : {
+        "start" : 1523861794995,
+        "stop" : 1523861795040,
+        "duration" : 45
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "welcome"
+      } ]
+    }, {
+      "name" : "Нажатие кнопки войти ",
+      "time" : {
+        "start" : 1523861795040,
+        "stop" : 1523861798015,
+        "duration" : 2975
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Вход на страницу вопросов",
+      "time" : {
+        "start" : 1523861798016,
+        "stop" : 1523861799169,
+        "duration" : 1153
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Переключение на вкладку база вопросов",
+      "time" : {
+        "start" : 1523861799170,
+        "stop" : 1523861800068,
+        "duration" : 898
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "нажатие кнопки добавить вопрос",
+      "time" : {
+        "start" : 1523861802068,
+        "stop" : 1523861803003,
+        "duration" : 935
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "ввод вопроса Как Вы видите себя через 3 года",
+      "time" : {
+        "start" : 1523861805010,
+        "stop" : 1523861805119,
+        "duration" : 109
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "question",
+        "value" : "Как Вы видите себя через 3 года"
+      } ]
+    }, {
+      "name" : "ввод ответа Работником компании",
+      "time" : {
+        "start" : 1523861805119,
+        "stop" : 1523861805166,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "answer",
+        "value" : "Работником компании"
+      } ]
+    }, {
+      "name" : "ввод компетенции mysql",
+      "time" : {
+        "start" : 1523861805166,
+        "stop" : 1523861806242,
+        "duration" : 1076
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "competence",
+        "value" : "mysql"
+      } ]
+    }, {
+      "name" : "нажатие кнопки сохранить",
+      "time" : {
+        "start" : 1523861806242,
+        "stop" : 1523861807318,
+        "duration" : 1076
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    } ],
+    "attachments" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 11,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.recruiting"
+  }, {
+    "name" : "testClass",
+    "value" : "test.recruiting.QuestionsTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "addNewQuestionPositive"
+  }, {
+    "name" : "suite",
+    "value" : "test.recruiting.QuestionsTest"
+  }, {
+    "name" : "host",
+    "value" : "WIN-6GBM20V5SU1"
+  }, {
+    "name" : "thread",
+    "value" : "4144@WIN-6GBM20V5SU1.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Подбор и адаптация: вопросы"
+  }, {
+    "name" : "story",
+    "value" : "Сценарий 1 – добавление нового вопроса"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}

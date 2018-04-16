@@ -1,0 +1,104 @@
+{
+  "uid" : "838d8472585b2f6c",
+  "name" : "пустой логин",
+  "fullName" : "test.login.LoginPageTest.loginAsRecruiterNegativeEmptyLoin",
+  "historyId" : "fb893b80c6d48fdc59112f57798cdc29",
+  "time" : {
+    "start" : 1523860980149,
+    "stop" : 1523860983382,
+    "duration" : 3233
+  },
+  "status" : "passed",
+  "description" : "Авторизация пустой логин",
+  "descriptionHtml" : "<p>Авторизация пустой логин</p>",
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Вход на страницу авторизации",
+      "time" : {
+        "start" : 1523860980149,
+        "stop" : 1523860981638,
+        "duration" : 1489
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    }, {
+      "name" : "Ввод пароля welcome",
+      "time" : {
+        "start" : 1523860981638,
+        "stop" : 1523860981703,
+        "duration" : 65
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "welcome"
+      } ]
+    }, {
+      "name" : "Нажатие кнопки войти ",
+      "time" : {
+        "start" : 1523860981703,
+        "stop" : 1523860981960,
+        "duration" : 257
+      },
+      "status" : "passed",
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ]
+    } ],
+    "attachments" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.login"
+  }, {
+    "name" : "testClass",
+    "value" : "test.login.LoginPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginAsRecruiterNegativeEmptyLoin"
+  }, {
+    "name" : "suite",
+    "value" : "test.login.LoginPageTest"
+  }, {
+    "name" : "host",
+    "value" : "WIN-6GBM20V5SU1"
+  }, {
+    "name" : "thread",
+    "value" : "4144@WIN-6GBM20V5SU1.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "Авторизация"
+  }, {
+    "name" : "story",
+    "value" : "Сценарий 1 – Авторизация главный рекрутер Кабанов"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "minor",
+    "categories" : [ ]
+  }
+}

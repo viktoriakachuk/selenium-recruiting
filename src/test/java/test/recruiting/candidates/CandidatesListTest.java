@@ -99,14 +99,14 @@ public class CandidatesListTest extends Login {
         sleep(5000);
         clp.checkRelocation(RELOCATION_TEST_VALUE);
         sleep(7000);
-        clp.checkVacancy(VACANCY_TEST_VALUE);
+       /* clp.checkVacancy(VACANCY_TEST_VALUE);
         sleep(7000);
         clp.checkEducation(EDUCATION_TEST_VALUE);
         sleep(7000);
         clp.checkUniversity(UNIVERSITY_TEST_VALUE);
         sleep(7000);
         clp.checkCompetence(COMPETENCE_TEST_VALUE);
-        sleep(7000);
+        sleep(7000);*/
         Assert.assertTrue(driver.findElement(By.xpath("//div[@id='filterTagsPanel' and div]")).isEnabled());
 
         //ASSERT correct candidate was found

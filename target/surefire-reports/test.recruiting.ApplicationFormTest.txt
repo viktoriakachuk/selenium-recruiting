@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: test.recruiting.ApplicationFormTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 79.364 s - in test.recruiting.ApplicationFormTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 117.198 s - in test.recruiting.ApplicationFormTest
